@@ -21,7 +21,7 @@ int fn_mnudrvprg_010_parallel_construct() {
 			fn_helloworld_srl();
 			break;
 
-		case 2:printf("\nThis is the output of Hello Kaizer parallel program \n");
+		case 2:printf("\nThis is the output of Hello world parallel program \n");
 			fn_helloworld_prl();
 			break;
 		
