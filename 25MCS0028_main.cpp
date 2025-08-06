@@ -5,13 +5,6 @@
 
 
 int main() {
-
-	
-
-
-
 	fn_mnudrvprg_030_for_worksharing_construct();
-
-
 	return 0;
 }
