@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 #include <omp.h>
-#include "ret_tid_hellokaizer.h"
+#include "ret_tid_helloworld.h"
 
 void metrics_collection() {
     double start, end;
@@ -19,14 +19,14 @@ void metrics_collection() {
         // Serial Execution
         start = omp_get_wtime();
         printf("\n\n");
-        fn_ret_tid_hellokaizer_srl();
+        fn_ret_tid_helloworld_srl();
         end = omp_get_wtime();
         ETs = end - start;
 
         // Parallel Execution
         start = omp_get_wtime();
         
-        fn_ret_tid_hellokaizer_prl();
+        fn_ret_tid_helloworld_prl();
         end = omp_get_wtime();
         ETp = end - start;
 
