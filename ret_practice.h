@@ -11,9 +11,9 @@ void fn_rer_practice1_srl() {
 	double start, end;
 
 	start = omp_get_wtime();
-	printf("Hello kaizer serial = %d \n", omp_get_thread_num());
+	printf("Hello world serial = %d \n", omp_get_thread_num());
 	end = omp_get_wtime();
-	printf("Execution time for the serial of Hello Kaizer is : %f \n", end - start);
+	printf("Execution time for the serial of Hello world is : %f \n", end - start);
 	ETserial = end - start;
 }
 
@@ -22,9 +22,9 @@ void fn_rer_practice1_prl() {
 	double start, end;
 	start = omp_get_wtime();
 #pragma omp parallel
-	printf("Hello kaizer parallel = %d \n", omp_get_thread_num());
+	printf("Hello world parallel = %d \n", omp_get_thread_num());
 	end = omp_get_wtime();
-	printf("Execution time for the parallel of Hello Kaizer is : %f \n", end - start);
+	printf("Execution time for the parallel of Hello world is : %f \n", end - start);
 
 	ETparallel = end - start;
 }
